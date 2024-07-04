@@ -1,0 +1,79 @@
+.contenedor-lista-precios {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-descripcion-lista-precios h3, .titulo-descripcion-lista-precios h1{
+    text-align: center;
+    color: rgb(36, 102, 41);
+    margin-bottom: 20px;
+}
+
+.titulo-descripcion-lista-precios h3 {
+    font-size: 2em; /* Aumentamos el tamaño del título "Servicios" */
+}
+
+.titulo-descripcion-lista-precios h1 {
+    font-size: 3.8em; /* Aumentamos el tamaño del título "Lista de precios" */
+}
+
+.tarjetas-lista-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.lista-servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.servicio {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajuste opcional para mejorar la sombra */
+    position: relative;
+    display: flex;
+    width: 80%;
+}
+
+.servicio-descripcion{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.servicio h4 {
+    color: rgb(36, 102, 41);
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    color: rgb(36, 102, 41);
+    margin-bottom: 20px;
+    margin-right: 70px; /* Ajustamos el margen derecho para dejar espacio para el botón */
+}
+
+.servicio button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(36, 102, 41);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.servicio button:hover {
+    background-color: rgb(74, 202, 29) /* Un tono más oscuro para el hover */
+}
+
