@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './aboutUs.css';
-import logo1 from '../assets/Logo-template.png'; // Asegúrate de reemplazar estos con los nombres correctos de tus imágenes
-import logo2 from '../assets/Logo2-template.png';
-import logo3 from '../assets/Logo3-template.png';
-import logo4 from '../assets/Logo4-template.png';
-import logo5 from '../assets/Logo5-template.png';
-import logo6 from '../assets/Logo6-template.png';
-import logo7 from '../assets/Logo7-template.png';
-import logo8 from '../assets/Logo8-template.png';
+import logo1 from '../assets/nestle.jpg'; 
+import logo2 from '../assets/smi.jpg';
+import logo3 from '../assets/montana.jpg';
+import logo4 from '../assets/qroma.png';
+import logo5 from '../assets/unmsm.png';
+import logo6 from '../assets/ferrocarril.png';
+import logo7 from '../assets/pesquero.jpg';
+import logo8 from '../assets/auna.jpg';
 import aboutus from '../assets/AboutUs-figura.png';
 import VideoAboutUs from '../assets/CorporacionFIESAC.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
+
+import CountUp from 'react-countup';
 
 // Array de rutas de logos e información adicional
 const logos = [
@@ -27,64 +29,34 @@ const logos = [
 
 function AboutUs() {
 
+    const [startCount, setStartCount] = useState(false);
+
     useEffect(() => {
         AOS.init({
             duration: 1400, // Duración de la animación en milisegundos
-        });
+        });    
 
-        // Eventos personalizados para AOS
-        document.addEventListener('aos:in', ({ detail }) => {
-            detail.setAttribute('data-aos', 'fade-up');
-        });
+        // Escuchar los eventos de AOS para iniciar el conteo
+        const handleAOSIn = ({ detail }) => {
+            if (detail.classList.contains('estadisticas')) {
+                setStartCount(true);
+            }
+        };
 
-        document.addEventListener('aos:out', ({ detail }) => {
-            detail.setAttribute('data-aos', 'fade-down');
-        });
+        document.addEventListener('aos:in', handleAOSIn);
+
+        return () => {
+            document.removeEventListener('aos:in', handleAOSIn);
+        };
 
     }, []);
 
+    
+
     return (
         <div className='contenedor-aboutus'>
-            <div className='primer-contenedor-aboutus'>
-                <div className='seccion1' data-aos="fade-up">
-                    <h1 className='titulo-seccion'>Nuestros clientes</h1>
-                </div>
-                <div className='separacion-vertical-aboutus' data-aos="fade-up"></div>
-                <div className='seccion2' data-aos="fade-up">
-                    <div className='logos' data-aos="fade-up">
-                        {logos.map((logo, index) => (
-                            <img key={index} src={logo.src} alt={logo.alt} className="logo-cliente" data-aos="fade-up"/>
-                        ))}
-                    </div>
-                </div>
-            </div>
-            <div className='segundo-contenedor-aboutus'>
-                <div className='seccion3' data-aos="fade-up">
-                    <h1 className='titulo-seccion'>Nuestros resultados</h1>
-                    <p>Estamos orgullosos de lo que hemos logrado, pero no nos detenemos aquí.</p>
-                </div>
-                <div className='seccion4' data-aos="fade-up">
-                    <div className="estadisticas" data-aos="fade-up">
-                        <div className="estadistica" data-aos="fade-up">
-                            <h3>X</h3>
-                            <p>Años de experiencia</p>
-                        </div>
-                        <div className="estadistica" data-aos="fade-up">
-                            <h3>100%</h3>
-                            <p>Clientes satisfechos</p>
-                        </div>
-                        <div className="estadistica" data-aos="fade-up">
-                            <h3>X+</h3>
-                            <p>Proyectos completados</p>
-                        </div>
-                        <div className="estadistica" data-aos="fade-up">
-                            <h3>X+</h3>
-                            <p>Eventos organizados</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='tercer-contenedor-aboutus'>
+
+            <div className='sobre-nosotros-aboutus'>
                 <div className='seccion5' data-aos="fade-up">
                     <h2 className='subtitulo-seccion'>Sobre nosotros</h2>
                     <h1 className='titulo-seccion'>Bienvenidos</h1>
@@ -97,7 +69,8 @@ function AboutUs() {
                     <img src={aboutus} alt='aboutUs-figura' className='aboutUs-figura'></img>
                 </div>
             </div>
-            <div className='cuarto-contenedor-aboutus'>
+
+            <div className='video-presentacion-aboutus'>
                 <div className='video-contenedor' data-aos="fade-up">
                     <video controls className='video'>
                         <source src={VideoAboutUs} type='video/mp4' />
@@ -105,6 +78,48 @@ function AboutUs() {
                     </video>
                 </div>
             </div>
+
+            <div className='nuestros-clientes-aboutus'>
+                <div className='seccion1' data-aos="fade-up">
+                    <h1 className='titulo-seccion'>Nuestros clientes</h1>
+                </div>
+                <div className='separacion-vertical-aboutus' data-aos="fade-up"></div>
+                <div className='seccion2' data-aos="fade-up">
+                    <div className='logos' data-aos="fade-up">
+                        {logos.map((logo, index) => (
+                            <img key={index} src={logo.src} alt={logo.alt} className="logo-cliente" data-aos="fade-up" />
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className='nuestros-resultados-aboutus'>
+                <div className='seccion3' data-aos="fade-up">
+                    <h1 className='titulo-seccion'>Nuestros resultados</h1>
+                    <p>Estamos orgullosos de lo que hemos logrado, pero no nos detenemos aquí.</p>
+                </div>
+                <div className='seccion4' data-aos="fade-up">
+                    <div className="estadisticas" data-aos="fade-up">
+                        <div className="estadistica" data-aos="fade-up">
+                            <h3>+<CountUp start={0} end={15} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/></h3>
+                            <p>Años de experiencia</p>
+                        </div>
+                        <div className="estadistica" data-aos="fade-up">
+                            <h3><CountUp start={0} end={100} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/>%</h3>
+                            <p>Clientes satisfechos</p>
+                        </div>
+                        <div className="estadistica" data-aos="fade-up">
+                            <h3><CountUp start={0} end={50} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/>+</h3>
+                            <p>Proyectos completados</p>
+                        </div>
+                        <div className="estadistica" data-aos="fade-up">
+                            <h3><CountUp start={0} end={30} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/>+</h3>
+                            <p>Eventos organizados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 }

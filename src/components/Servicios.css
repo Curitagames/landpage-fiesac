@@ -3,7 +3,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: #e0e0e0;
+  background-color: #fff;
 }
 
 .titulo-descripcion-servicios{
@@ -33,7 +33,7 @@
 }
 
 .servicio-item {
-  background-color: #fff;
+  background-color: #f1f1f1;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   display: flex;

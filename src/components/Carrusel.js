@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import './Carrusel.css';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import img1 from '../assets/img1.jpg';
@@ -53,33 +53,35 @@ const Carrusel = () => {
   }, []);
 
   return (
-    <div className="carousel-container" data-aos="fade-up">
-      <Slider {...settings}>
-        <div className="carousel-item">
-          <img src={img1} alt="Argentino" className="carousel-imagen" />
-        </div>
-        <div className="carousel-item">
-          <img src={img2} alt="Azul" className="carousel-imagen" />
-        </div>
-        <div className="carousel-item">
-          <img src={img3} alt="Gato" className="carousel-imagen" />
-        </div>
-        <div className="carousel-item">
-          <img src={img4} alt="Felinos" className="carousel-imagen" />
-        </div>
-        <div className="carousel-item">
-          <img src={img5} alt="Guacamayo" className="carousel-imagen" />
-        </div>
-        <div className="carousel-item">
-          <img src={img6} alt="León" className="carousel-imagen" />
-        </div>
-        <div className="carousel-item">
-          <img src={img7} alt="Tigre" className="carousel-imagen" />
-        </div>
-        <div className='carousel-item'>
-          <img src={img8} alt="Zorro" className="carousel-imagen" />
-        </div>
-      </Slider>
+    <div className='carrusel-principal-contenedor'>
+      <div className="carousel-container" data-aos="fade-up">
+        <Slider {...settings}>
+          <div className="carousel-item">
+            <img src={img1} alt="Argentino" className="carousel-imagen" />
+          </div>
+          <div className="carousel-item">
+            <img src={img2} alt="Azul" className="carousel-imagen" />
+          </div>
+          <div className="carousel-item">
+            <img src={img3} alt="Gato" className="carousel-imagen" />
+          </div>
+          <div className="carousel-item">
+            <img src={img4} alt="Felinos" className="carousel-imagen" />
+          </div>
+          <div className="carousel-item">
+            <img src={img5} alt="Guacamayo" className="carousel-imagen" />
+          </div>
+          <div className="carousel-item">
+            <img src={img6} alt="León" className="carousel-imagen" />
+          </div>
+          <div className="carousel-item">
+            <img src={img7} alt="Tigre" className="carousel-imagen" />
+          </div>
+          <div className='carousel-item'>
+            <img src={img8} alt="Zorro" className="carousel-imagen" />
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 };

@@ -54,6 +54,15 @@
     flex-direction: column;
 }
 
+.nombre-apellido-contacto{
+    display: flex;
+    gap: 20px;
+}
+
+.nombre-contacto, .apellido-contacto{
+    flex: 1;
+}
+
 .formulario-contacto label {
     margin-bottom: 5px;
     color: rgb(36, 102, 41);
@@ -86,7 +95,7 @@
     background-color: rgb(74, 202, 29);
 }
 
-.contenedor-horario {
+.contenedor-informacion {
     background-color: #edf6f9;
     width: 50%;
     padding: 30px;
@@ -96,31 +105,38 @@
     gap: 60px;
 }
 
-.titulo-horario {
+.titulo-informacion {
     color: rgb(36, 102, 41);
     font-size: 3.5em;
     font-weight: bold;
     text-align: center;
 }
 
-.dias-horarios {
+.informacion-adicional {
     color: rgb(36, 102, 41);
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.dia-horario {
+.informacion-adicional {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 50px;
 }
 
-.dia-semana {
-    font-size: 2em;
-    margin-bottom: 5px;
+.informacion-adicional-seccion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.dia-horario p {
-    font-size: 1.5em;
+.informacion-adicional-seccion p{
+    font-size: 1.2rem;
+}
+
+.separacion-horizontal-informacion{
+    width: 50%;
+    height: 2px;
+    background-color: rgb(36, 102, 41);
 }
