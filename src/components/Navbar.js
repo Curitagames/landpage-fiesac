@@ -1,23 +1,48 @@
-import React from 'react'
-import './navbar.css'
-import logo from '../assets/Logo-fiesac.png'
+import React, { Component, useState } from 'react';
+import './navbar.css';
+import logo from '../assets/Logo-fiesac.png';
 
-function Navbar() {
-    return (
-        <header className="barra-de-navegacion">
-            <a href="/" className="logo"><img src={logo} className='logo-fiesac' alt='#'/></a>
+class Navbar extends Component {
 
-            <nav className="navbar">
-                <a href="/">Inicio</a>
-                <a href="/">Sobre nosotros</a>
-                <a href="/">Servicios</a>
-                <a href="/">Contáctenos</a>
-                <a href="/">Blog</a>
-            </nav>
+    state = { clicked: false };
 
-            <a href='/' className='boton-contacto'>Contáctanos</a>
-        </header>
-    )
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked });
+    }
+
+    handleLinkClick = () => {
+        this.setState({ clicked: false });
+    }
+
+    render(){
+        return (
+            <>
+    
+                {/* Barra de navegación principal */}
+    
+                <nav className='navbar'>
+                <a href="#inicio" className="logo">
+                    <img src={logo} className='logo-fiesac' alt='logo-fiesac' />
+                </a>
+                    <div className='contenedor-elementos-navbar'>
+                        <ul className={this.state.clicked ? "elementos-navbar active" : "elementos-navbar"} >
+                            <li><a href="#inicio" className='elemento-navegacion' onClick={this.handleLinkClick}>Inicio</a></li>
+                            <li><a href="#servicios" className='elemento-navegacion' onClick={this.handleLinkClick}>Servicios</a></li>
+                            <li><a href="#about-us" className='elemento-navegacion' onClick={this.handleLinkClick}>Sobre nosotros</a></li>
+                            <li><a href="#contacto" className='elemento-navegacion' onClick={this.handleLinkClick}>Contáctenos</a></li>
+                            <li><a href="/" className='elemento-navegacion' onClick={this.handleLinkClick}>Blog</a></li>
+                            <a href='#contacto' className='boton-contacto' onClick={this.handleLinkClick}>Contáctanos</a>
+                        </ul>
+                    </div>
+    
+                    <div className='mobile' onClick={this.handleClick}>
+                        <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
+                    </div>
+                </nav>
+    
+            </>
+        );
+    }
 }
 
-export default Navbar
+export default Navbar;

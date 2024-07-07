@@ -14,6 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 
 import CountUp from 'react-countup';
+import Finalini from './Finalini';
 
 // Array de rutas de logos e información adicional
 const logos = [
@@ -120,6 +121,7 @@ function AboutUs() {
                 </div>
             </div>
 
+            <Finalini/>
         </div>
     );
 }

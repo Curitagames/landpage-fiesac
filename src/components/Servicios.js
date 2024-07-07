@@ -8,7 +8,6 @@ import limpiezaCisterna from '../assets/limpiezacisterna.jpg';
 import serviciosGenerales from '../assets/servicio-general.jpg';
 
 import Carrusel from './Carrusel';
-import Listaprecios from './Listaprecios';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
@@ -23,14 +22,18 @@ function Servicios() {
 
   return (
     <div className="servicios-container">
+
       <div className='primer-seccion-servicios'>
+
         <div className='titulo-descripcion-servicios' data-aos="fade-up">
-          <h1 className="servicios-titulo">Servicios Destacados</h1>
+          <h1 className="titulo-seccion">Servicios Destacados</h1>
           <p className="servicios-descripcion">
             En Fiesac, ofrecemos servicios destacados de fumigación, limpieza de pozos sépticos, trampas de grasa y cisternas, garantizando soluciones eficientes.
           </p>
         </div>
+
         <div className="servicios-grid" data-aos="fade-up">
+
           <div className="servicio-item">
             <img src={pozoSeptico} alt="Limpieza Pozo Septico" className="servicio-imagen" />
             <h2>Limpieza de Pozos Sépticos</h2>
@@ -39,6 +42,7 @@ function Servicios() {
               asegurando soluciones efectivas y adaptadas a sus necesidades sanitarias específicas.
             </p>
           </div>
+
           <div className="servicio-item">
             <img src={trampaGrasa} alt="Limpieza de Trampa de Grasa" className="servicio-imagen" />
             <h2>Limpieza de Trampa de Grasa</h2>
@@ -46,6 +50,7 @@ function Servicios() {
               Ofrecemos servicios especializados de limpieza de trampas de grasa para empresas, cumpliendo normativas vigentes y garantizando máxima eficiencia y seguridad.
             </p>
           </div>
+
           <div className="servicio-item">
             <img src={fumigacion} alt="Fumigacion" className="servicio-imagen" />
             <h2>Fumigación Integral</h2>
@@ -53,6 +58,7 @@ function Servicios() {
               Ofrecemos servicios de fumigación para eliminar plagas, asegurando un ambiente limpio y seguro, alineados con las necesidades de su hogar o empresa.
             </p>
           </div>
+
           <div className="servicio-item">
             <img src={limpiezaCisterna} alt="Limpieza de Cisterna" className="servicio-imagen" />
             <h2>Limpieza de Cisternas</h2>
@@ -60,15 +66,18 @@ function Servicios() {
               Ofrecemos servicios completos de limpieza de cisternas, garantizando agua limpia y segura, identificando problemas y oportunidades de mejora para su sistema.
             </p>
           </div>
+          
           <div className='servicio-item'>
             <img src={serviciosGenerales} alt="Limpieza de Pozos"/>
             <h2>Servicios Generales</h2>
             <p>
-              Ofrecemos servicios generales de limpieza, desatoro de lineas de desague
+            Proporcionamos soluciones integrales en saneamiento e higiene ambiental, evaluando y optimizando espacios para garantizar un entorno saludable y libre de contaminantes.
             </p>
           </div>
+
         </div>
       </div>
+
       <Carrusel />
     </div>
   );

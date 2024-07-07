@@ -7,18 +7,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
     overflow: hidden; /* Evita que el contenido sobresalga */
 }
 
 .contenedor-inicio {
-    max-width: 70%; /* Ajusta el ancho máximo del contenido */
-    padding: 30px; /* Espaciado interno para mejor legibilidad */
+    max-width: 100%; /* Ajusta el ancho máximo del contenido */
+    padding: 20px; /* Espaciado interno para mejor legibilidad */
     color: rgb(36, 102, 41); /* Color del texto */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 15px;
     justify-content: space-around;
     height: auto; /* Asegura que el contenido ocupe todo el alto del contenedor */
     box-sizing: border-box; /* Incluye el padding en el tamaño del contenedor */
@@ -37,23 +37,56 @@
     /* Ajusta el tamaño del párrafo para que sea proporcional al ancho de la pantalla */
 }
 
-.boton-conoce {/*boton*/
-    margin-top: 50px; /* Reduce el margen superior del botón */
-    font-weight: 700; /* Establece el grosor con el que se muestran las letras de texto */
-    padding: 15px 25px; /* Establece el espaciado de relleno requerido por todos los lados del elemento */
-    color: white; /* Color de la letra */
-    background-color: rgb(36, 102, 41); /* Color del fondo */
-    text-align: center; /* Centra el texto del botón */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    line-height: normal; /* Ajusta la altura de la línea para mantener el texto junto */
-    text-transform: uppercase;
-    border-radius: 4px;
-    transition: .4s;
+.segundo-parrafo-inicio{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 10px;
 }
 
-.boton-conoce:hover{
-    background-color: rgb(74, 202, 29);
-    transition: .4s;
+.boton-conoce-mas {
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(36, 102, 41);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* Breakpoints para diferentes tamaños de pantalla */
+@media (max-width: 1024px) {
+    .titulo-inicio {
+        font-size: 3em;
+    }
+
+    .parrafo-inicio {
+        font-size: 1.2em;
+    }
+
+    .boton-conoce-mas {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    .background-inicio {
+        height: 60vh;
+    }
+
+    .titulo-inicio {
+        font-size: 2.5em;
+    }
+
+    .parrafo-inicio {
+        font-size: 1.1em;
+    }
+
+    .boton-conoce-mas {
+        font-size: 0.9em;
+        padding: 10px 18px;
+    }
 }
 
 @media (max-width: 578px) {

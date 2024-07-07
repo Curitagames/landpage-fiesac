@@ -140,3 +140,38 @@
     height: 2px;
     background-color: rgb(36, 102, 41);
 }
+
+@media (max-width: 769px) {
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-contactame{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-parrafo-contactame{
+        text-align: center;
+    }
+
+    .contenedor-formulario-contacto{
+        width: 100%;
+    }
+
+    .boton-enviar-formulario{
+        width: 100%;
+    }
+
+    .contenedor-informacion{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .separacion-horizontal-informacion{
+        width: 100%;
+    }
+}

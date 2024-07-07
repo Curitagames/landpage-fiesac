@@ -124,7 +124,7 @@ function Contacto() {
                     <div className='informacion-adicional-seccion'>
                         <h2 className='telefonos'>Telefonos de la empresa:</h2>
                         <div className='separacion-horizontal-informacion'></div>
-                        <p>Fijo: (01) 523-8882</p>
+                        <p>Fijo: (01) 532-4273</p>
                         <p>Entel: 994-107-516</p>
                         <p>RPM: 995-622-557</p>
                     </div>

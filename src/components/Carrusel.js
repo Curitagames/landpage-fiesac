@@ -40,10 +40,19 @@ const Carrusel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Ajusta este valor según sea necesario
+    slidesToShow: 3, // Ajusta este valor según sea necesario
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 769, // Asegúrate de que coincida con tu media query
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
   useEffect(() => {
