@@ -5,6 +5,8 @@ import Inicio from './components/Inicio';
 import Contacto from './components/Contacto';
 import Servicios from './components/Servicios';
 import WhatsappBoton from './components/WhatsappBoton';
+import Footer from './components/Footer';
+import PoliticaCalidad from './components/PoliticaCalidad';
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
       <div id="inicio"><Inicio /></div>
       <div id="servicios"><Servicios /></div>
       <div id="about-us"><AboutUs /></div>
+      <PoliticaCalidad/>
       <div id="contacto"><Contacto /></div>
+      <Footer/>
       <WhatsappBoton/>
     </>
   );

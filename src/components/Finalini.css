@@ -81,4 +81,8 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  .titulo-finalini{
+    font-size: 3em;
+  }
 }

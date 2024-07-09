@@ -66,9 +66,10 @@
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
-  .servicios-container {
-    padding: 10px;
+@media (max-width: 769px) {
+
+  .titulo-seccion{
+    font-size: 3em;
   }
 
   .servicios-titulo {

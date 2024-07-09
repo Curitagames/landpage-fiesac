@@ -9,7 +9,7 @@ import logo6 from '../assets/ferrocarril.png';
 import logo7 from '../assets/pesquero.jpg';
 import logo8 from '../assets/auna.jpg';
 import aboutus from '../assets/AboutUs-figura.png';
-import VideoAboutUs from '../assets/CorporacionFIESAC.mp4';
+import VideoPresentacion from '../assets/Corporacion-FIESAC.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 
@@ -74,7 +74,7 @@ function AboutUs() {
             <div className='video-presentacion-aboutus'>
                 <div className='video-contenedor' data-aos="fade-up">
                     <video controls className='video'>
-                        <source src={VideoAboutUs} type='video/mp4' />
+                        <source src={VideoPresentacion} type='video/mp4' />
                         Tu navegador no soporta la reproducción de video.
                     </video>
                 </div>
