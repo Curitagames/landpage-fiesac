@@ -4,6 +4,7 @@ import './ModalForm.css';  // Importa el archivo CSS
 import logo_modal from '../assets/logo-fiesac-modal.jpg'; 
 import { consultarRUC } from './ConsultandoRUC';
 import emailjs from 'emailjs-com';
+import Brochure from '../assets/Brochure-Corporacion-Fiesac-2024.pdf';
 
 Modal.setAppElement('#root'); // Asegura que el modal esté accesible
 
@@ -39,7 +40,7 @@ const ModalForm = ({ isOpen, onRequestClose }) => {
 
                 // Descargar el PDF
                 const link = document.createElement('a');
-                link.href = '../assets/Brochure-Corporacion-Fiesac-2024.pdf';  // Reemplaza con la ruta correcta a tu archivo PDF
+                link.href = Brochure;  // Reemplaza con la ruta correcta a tu archivo PDF
                 link.download = 'Brochure-Corporacion-Fiesac-2024.pdf'; // Nombre del archivo que se descargará
                 document.body.appendChild(link);
                 link.click();
