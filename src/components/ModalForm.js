@@ -40,7 +40,7 @@ const ModalForm = ({ isOpen, onRequestClose }) => {
                 // Descargar el PDF
                 const link = document.createElement('a');
                 link.href = '../assets/Brochure-Corporacion-Fiesac-2024.pdf';  // Reemplaza con la ruta correcta a tu archivo PDF
-                link.download = 'Brochure-FIESAC.pdf'; // Nombre del archivo que se descargará
+                link.download = 'Brochure-Corporacion-Fiesac-2024.pdf'; // Nombre del archivo que se descargará
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
