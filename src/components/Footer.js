@@ -7,7 +7,7 @@ function Footer() {
       <div className='contenido-footer'>
         <div className='footer-contacto-links'>
           <div className='metodos-contacto'>
-            <h3>Cóntactanos</h3>
+            <h3>Contáctanos</h3>
             <i className="fa fa-envelope contacto-icono">
               <p>marketing1@fiesac.com.pe</p>
             </i>
@@ -16,7 +16,7 @@ function Footer() {
             </i>
           </div>
           <div className='links'>
-            <h3>Informacion</h3>
+            <h3>Información</h3>
             <a href='/'>Términos y condiciones</a>
             <a href='/'>Politicas de privacidad</a>
           </div>

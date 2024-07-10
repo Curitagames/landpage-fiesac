@@ -26,10 +26,10 @@ function Inicio() {
     return (
             <div className={`background-inicio ${modalIsOpen ? 'blur' : ''}`}>
                 <div className="contenedor-inicio">
-                    <h1 className='titulo-inicio' data-aos="fade-up">Corporación FIESAC: Excelencia en Servicios Profesionales de Higiene y Saneamiento Ambiental</h1>
+                    <h1 className='titulo-inicio' data-aos="fade-up">Excelencia en Servicios Profesionales de Higiene y Saneamiento Ambiental</h1>
                     <p className='parrafo-inicio' data-aos="fade-up">
                         Ofrecemos soluciones integrales de higiene y saneamiento ambiental para garantizar entornos seguros y saludables. <br/>
-                        Para conocer más haga clic en el botón
+                        Para obtener nuestro Brochure haga clic en el botón
                     </p>
                     <button className='boton-conoce-mas' onClick={openModal} data-aos="fade-up">Conoce más</button>
                     <ModalForm isOpen={modalIsOpen} onRequestClose={closeModal} />
