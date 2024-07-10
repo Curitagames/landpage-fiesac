@@ -12,7 +12,7 @@ function Footer() {
               <p>marketing@fiesac.com.pe</p>
             </i>
             <i className="fa fa-phone contacto-icono">
-              <p>+51 994-107-516</p>
+              <p>+51 995-622-557</p>
             </i>
           </div>
           <div className='links'>
