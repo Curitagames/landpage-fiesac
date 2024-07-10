@@ -9,7 +9,7 @@ function Footer() {
           <div className='metodos-contacto'>
             <h3>Contáctanos</h3>
             <i className="fa fa-envelope contacto-icono">
-              <p>marketing1@fiesac.com.pe</p>
+              <p>marketing@fiesac.com.pe</p>
             </i>
             <i className="fa fa-phone contacto-icono">
               <p>+51 994-107-516</p>

@@ -63,7 +63,7 @@ function AboutUs() {
                     <h1 className='titulo-seccion'>Bienvenidos</h1>
                     <hr className='separacion-horizontal-aboutus'></hr>
                     <p className='parrafo-bienvenida'>
-                        ¡Bienvenidos a la Corporación FIESAC! Nos destacamos por ofrecer contratos de lealtad, servicios excepcionales al cliente y contar con un personal altamente cualificado y con experiencia. Nuestra misión es brindar servicios de saneamiento e higiene profesional y de calidad. ¡Confía en FIESAC para tus necesidades empresariales!
+                        ¡Bienvenidos a Corporación FIESAC! Nos destacamos por ofrecer contratos de lealtad, servicios excepcionales al cliente y contar con un personal altamente cualificado y con experiencia. Nuestra misión es brindar servicios de saneamiento e higiene profesional y de calidad. ¡Confía en FIESAC para tus necesidades empresariales!
                     </p>
                 </div>
                 <div className='seccion6' data-aos="fade-up">

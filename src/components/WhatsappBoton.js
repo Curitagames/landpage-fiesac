@@ -5,7 +5,7 @@ import WhatsappIcon from '../assets/whatsapp.png'
 function WhatsappBoton() {
 
     const [showDialog, setShowDialog] = useState(false);
-    const phoneNumber = "51929311478"; // Reemplaza con tu número de WhatsApp
+    const phoneNumber = "51995622557"; // Reemplaza con tu número de WhatsApp
     const message = "Hola, me gustaría más información sobre sus servicios."; // Mensaje predefinido
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
