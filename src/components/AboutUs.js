@@ -102,7 +102,7 @@ function AboutUs() {
                 <div className='seccion4' data-aos="fade-up">
                     <div className="estadisticas" data-aos="fade-up">
                         <div className="estadistica" data-aos="fade-up">
-                            <h3>+<CountUp start={0} end={15} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/></h3>
+                            <h3>+<CountUp start={0} end={18} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/></h3>
                             <p>Años de experiencia</p>
                         </div>
                         <div className="estadistica" data-aos="fade-up">
@@ -110,7 +110,7 @@ function AboutUs() {
                             <p>Clientes satisfechos</p>
                         </div>
                         <div className="estadistica" data-aos="fade-up">
-                            <h3><CountUp start={0} end={50} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/>+</h3>
+                            <h3><CountUp start={0} end={100} duration={3} startOnMount={false} delay={0} enableScrollSpy={true} scrollSpyOnce={true} redraw={true}/>+</h3>
                             <p>Proyectos completados</p>
                         </div>
                         <div className="estadistica" data-aos="fade-up">

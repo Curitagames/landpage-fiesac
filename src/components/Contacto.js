@@ -146,11 +146,11 @@ function Contacto() {
                         </p>
                     </div>
                     <div className='informacion-adicional-seccion' data-aos="fade-up">
-                        <h2 className='telefonos'>Telefonos de la empresa:</h2>
+                        <h2 className='telefonos'>Teléfonos de la empresa:</h2>
                         <div className='separacion-horizontal-informacion'></div>
                         <p>Fijo: (01) 532-4273</p>
                         <p>Entel: 994-107-516</p>
-                        <p>RPM: 995-622-557</p>
+                        <p>Movistar: 995-622-557</p>
                     </div>
                 </div>
             </div>
