@@ -29,7 +29,6 @@ class Navbar extends Component {
                             <li><a href="#inicio" className='elemento-navegacion' onClick={this.handleLinkClick}>Inicio</a></li>
                             <li><a href="#servicios" className='elemento-navegacion' onClick={this.handleLinkClick}>Servicios</a></li>
                             <li><a href="#about-us" className='elemento-navegacion' onClick={this.handleLinkClick}>Sobre nosotros</a></li>
-                            <li><a href="#contacto" className='elemento-navegacion' onClick={this.handleLinkClick}>Contáctenos</a></li>
                             <a href='#contacto' className='boton-contacto' onClick={this.handleLinkClick}>Contáctanos</a>
                         </ul>
                     </div>
