@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landpage-fiesac/static/css/main.374debbf.css",
-    "main.js": "/landpage-fiesac/static/js/main.f1fda91b.js",
+    "main.js": "/landpage-fiesac/static/js/main.a1fe25f4.js",
     "static/media/Corporacion-FIESAC.mp4": "/landpage-fiesac/static/media/Corporacion-FIESAC.d05ad26c91eea393963c.mp4",
     "static/media/Brochure-Corporacion-Fiesac-2024.pdf": "/landpage-fiesac/static/media/Brochure-Corporacion-Fiesac-2024.5190f3a2b2f3235b2ee7.pdf",
     "static/media/Portada1.png": "/landpage-fiesac/static/media/Portada1.3f76ed66ff3810db2e09.png",
@@ -37,10 +37,10 @@
     "static/media/slick.woff": "/landpage-fiesac/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/landpage-fiesac/index.html",
     "main.374debbf.css.map": "/landpage-fiesac/static/css/main.374debbf.css.map",
-    "main.f1fda91b.js.map": "/landpage-fiesac/static/js/main.f1fda91b.js.map"
+    "main.a1fe25f4.js.map": "/landpage-fiesac/static/js/main.a1fe25f4.js.map"
   },
   "entrypoints": [
     "static/css/main.374debbf.css",
-    "static/js/main.f1fda91b.js"
+    "static/js/main.a1fe25f4.js"
   ]
 }
